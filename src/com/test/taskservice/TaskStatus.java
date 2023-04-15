@@ -1,4 +1,4 @@
-package com.minku;
+package com.test.taskservice;
 
 public class TaskStatus {
     private boolean isComplete;

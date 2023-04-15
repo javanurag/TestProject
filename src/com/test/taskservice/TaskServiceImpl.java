@@ -1,4 +1,4 @@
-package com.minku;
+package com.test.taskservice;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
