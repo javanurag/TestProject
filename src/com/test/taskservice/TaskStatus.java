@@ -9,7 +9,7 @@ public class TaskStatus {
     }
 
     public synchronized boolean isComplete() throws InterruptedException {
-        if(!isComplete)
+        while(!isComplete)
             wait();
         return true;
     }
