@@ -21,8 +21,9 @@ public class TaskServiceImpl implements TaskService {
                 TaskStatus taskStatus = taskMap.computeIfAbsent(taskId, tId -> new TaskStatus());
                 try {
                     taskStatus.isComplete();
-                } catch (InterruptedException e) {
+                } catch (Exception e) {
                     e.printStackTrace();
+                    throw new RuntimeException();
                 }
             });
 
